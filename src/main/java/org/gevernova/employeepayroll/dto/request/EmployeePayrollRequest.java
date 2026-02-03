@@ -1,7 +1,7 @@
 package org.gevernova.employeepayroll.dto.request;
 
 import jakarta.validation.constraints.*;
-import java.math.BigDecimal;
+
 
 public class EmployeePayrollRequest {
 
@@ -10,7 +10,7 @@ public class EmployeePayrollRequest {
 
     @NotNull(message = "Salary is required") // Salary must be provided
     @Positive(message = "Salary must be greater than zero") // Salary must be positive
-    private BigDecimal salary;
+    private double salary;
 
     @NotBlank(message = "Department cannot be empty") // Validates department
     private String department;
@@ -20,7 +20,7 @@ public class EmployeePayrollRequest {
     }
 
     // Parameterized constructor
-    public EmployeePayrollRequest(String name, BigDecimal salary, String department) {
+    public EmployeePayrollRequest(String name, double salary, String department) {
         this.name = name;
         this.salary = salary;
         this.department = department;
@@ -34,11 +34,11 @@ public class EmployeePayrollRequest {
         this.name = name;
     }
 
-    public BigDecimal getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(BigDecimal salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
