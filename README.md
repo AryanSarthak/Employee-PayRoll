@@ -22,36 +22,6 @@ The project follows a layered architecture using:
 - Lombok  
 - Hibernate Validator  
 
----
-
-## 📂 Project Structure
-org.gevernova.employeepayroll
-│
-├── controller
-│   └── EmployeePayrollController
-│
-├── service
-│   ├── EmployeePayrollService
-│   └── EmployeePayrollServiceImpl
-│
-├── repository
-│   └── EmployeePayrollRepository
-│
-├── entity
-│   └── Employee
-│
-├── dto
-│   ├── request
-│   │   └── EmployeePayrollRequest
-│   └── response
-│       └── EmployeePayrollResponse
-│
-├── exception
-│   ├── EmployeeNotFoundException
-│   └── GlobalExceptionHandler
-
----
-
 ## ⚙️ Features
 ✔ Add Employee  
 ✔ Get Employee By ID  
